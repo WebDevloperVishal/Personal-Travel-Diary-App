@@ -1,7 +1,7 @@
 {
   "name": "personal-travel-diary-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
