@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #05b6d3,
+  --color-secondary: #EF863E,
+}
+
+/* Custom scrollbar styles */
+.scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgb(118, 4, 224);
+    border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track{
+    background-color: rgb(245, 198, 126);
+}
+
+@layer components {
+    .input-box {
+        @apply w-full text-sm bg-cyan-600/5 rounded-sm px-5 py-3 mb-4 outline-none
+    }
+
+    .btn-primary {
+        @apply w-full text-sm font-medium text-white bg-cyan-500 shadow-lg shadow-cyan-200/50 p-[10px] rounded-full my-1 hover:bg-cyan-100 hover:text-blue-500
+    }
+
+    .btn-light {
+        @apply bg-cyan-50 text-blue-500 shadow-cyan-100/0 border-cyan-100 hover:bg-blue-500 hover:text-white
+    }
+
+    .login-ui-box {
+        @apply w-80 h-[450px] rounded-full bg-blue-500 absolute rotate-45
+    }
+
+    .icon-btn {
+        @apply text-[22px] text-slate-300 cursor-pointer hover:text-red-500
+    }
+
+    .btn-small {
+        @apply flex items-center gap-1 text-xs font-medium bg-cyan-50 text-[#05b6d3] shadow-cyan-100/0 border border-cyan-100 hover:bg-[#05b6d3] hover:text-white rounded-sm px-3 py-[3px];
+    }
+    
+    .btn-delete {
+        @apply bg-rose-50 text-rose-500 shadow-rose-100/0 border border-rose-100 hover:bg-rose-500 hover:text-white
+    }
+
+    .input-label {
+        @apply text-xs text-slate-400
+    }
+}
